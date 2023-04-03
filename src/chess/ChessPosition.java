@@ -32,6 +32,5 @@ public class ChessPosition {
 		this.column = position.getColumn();
 		this.row = position.getRow();
 		return null;
-		
 	}
 }
