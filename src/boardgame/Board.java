@@ -40,4 +40,16 @@ public class Board { // tabuleiro
 		pieces[position.getRow()][position.getColumn()] = piece;
 		piece.position = position;
 	}
+	
+	public boolean positionExists(int row, int column) {
+		return row>=0 && row < rows && column >=0 && column < columns;
+	}
+	public boolean positionExists(Position position) {
+		return positionExists(position.getRow(), position.getColumn());
+	}
+	
+	public boolean thereisAPiece(Position position) {
+		return piece(position) != null;
+	}
 }
+
